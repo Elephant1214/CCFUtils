@@ -18,3 +18,9 @@ dependencies {
     compileOnly("cloud.commandframework:cloud-annotations:1.8.3")
     compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.3")
 }
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
