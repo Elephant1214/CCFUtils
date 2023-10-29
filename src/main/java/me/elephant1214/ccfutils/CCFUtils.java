@@ -11,6 +11,10 @@ import org.bukkit.permissions.Permission;
 import java.util.ArrayList;
 
 public final class CCFUtils {
+    /**
+     * Registers the annotations from CCFUtils using an annotation parser instance.
+     * @param annotationParser the annotation parser to register annotations with
+     */
     public static void registerAnnotations(AnnotationParser<?> annotationParser) {
         annotationParser.registerBuilderModifier(BetterCmdPerm.class, (annotation, builder) -> {
             Permission perm = Bukkit.getPluginManager().getPermission(annotation.value());
@@ -28,4 +32,6 @@ public final class CCFUtils {
             return builder.permission(OrPermission.of(perms));
         });
     }
+
+    private CCFUtils() {}
 }
