@@ -1,6 +1,7 @@
 plugins {
     idea
     java
+    `maven-publish`
 }
 
 group = "me.elephant1214.ccfutils"
