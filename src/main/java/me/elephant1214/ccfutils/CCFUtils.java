@@ -25,7 +25,7 @@ public final class CCFUtils {
         });
 
         annotationParser.registerBuilderModifier(MultipleCmdPerms.class, (annotation, builder) -> {
-            final var perms = new ArrayList<CommandPermission>();
+            final ArrayList<CommandPermission> perms = new ArrayList<>();
             for (BetterCmdPerm bcp : annotation.value()) {
                 perms.add(cloud.commandframework.permission.Permission.of(bcp.value()));
             }
