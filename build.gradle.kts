@@ -13,15 +13,15 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.17-R0.1-SNAPSHOT")
-    compileOnly("cloud.commandframework:cloud-paper:1.8.3")
-    compileOnly("cloud.commandframework:cloud-annotations:1.8.3")
-    compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.3")
+    compileOnly("io.papermc.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
+    compileOnly("cloud.commandframework:cloud-paper:1.8.4")
+    compileOnly("cloud.commandframework:cloud-annotations:1.8.4")
+    compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.4")
 }
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
+        languageVersion.set(JavaLanguageVersion.of(8))
     }
 
     withSourcesJar()
