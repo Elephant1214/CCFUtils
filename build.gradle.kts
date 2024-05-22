@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.elephant1214.ccfutils"
-version = "1.0.0"
+version = "1.1.0"
 
 repositories {
     mavenCentral()
@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
+    compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("cloud.commandframework:cloud-paper:1.8.4")
     compileOnly("cloud.commandframework:cloud-annotations:1.8.4")
     compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.4")
